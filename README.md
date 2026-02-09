@@ -13,3 +13,6 @@ This repository:
 
 It surfaces inadmissible capital states, structural constraints,
 liquidity horizons, and governance exceptions only.
+
+
+“This core is intentionally minimal and stable.”
