@@ -7,8 +7,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
       - uses: actions/setup-python@v4
         with:
           python-version: '3.11'
-      - run: pip install pytest
-      - run: pytest
+
+      - name: Install pytest
+        run: pip install pytest
+
+      - name: Run Step 6 fiduciary gate
+        run: pytest tests/test_step6.py
