@@ -53,3 +53,4 @@ def test_step6_end_to_end():
     export = export_regulator_json(sealed)
     assert export["non_advisory"] is True
     assert export["interpretive"] is False
+
