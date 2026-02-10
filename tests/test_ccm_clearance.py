@@ -1,4 +1,6 @@
-from engine.ccm.clearance_engine import generate_clearance
+from importlib import import_module
+generate_clearance = import_module("engine.ccm.clearance_engine").generate_clearance
+
 
 def test_clearance_without_issues():
     snapshot = {
