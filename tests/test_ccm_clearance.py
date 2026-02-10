@@ -4,8 +4,6 @@ generate_clearance = import_module(
     "engine.ccm.clearance_engine"
 ).generate_clearance
 
-
-
 def test_clearance_without_issues():
     snapshot = {
         "unresolved_conditions": [],
