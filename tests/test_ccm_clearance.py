@@ -22,3 +22,4 @@ def test_clearance_with_conditions():
 
     assert result["clearance_status"] == "CONDITIONAL"
     assert len(result["conditions"]) == 1
+    
