@@ -67,7 +67,8 @@ def redact_for_audience(
                 {
                     "field": field,
                     "reason": reason.value,
-                    "redacted_at": datetime.now(UTC).isoformat(),
+                   "redacted_at": datetime.now(UTC).isoformat(),
+
 
                 }
             )
