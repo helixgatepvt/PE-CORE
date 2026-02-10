@@ -6,4 +6,5 @@ create table governance_compliance_records (
     check (compliance_status in ('COMPLIANT','NON_COMPLIANT')),
   violations jsonb,
   evaluated_at timestamp with time zone default now()
+  
 );
