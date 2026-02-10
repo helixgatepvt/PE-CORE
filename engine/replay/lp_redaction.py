@@ -17,7 +17,8 @@ This is a defensive compliance boundary, not a presentation layer.
 from enum import Enum
 from typing import Dict, Any, List
 from copy import deepcopy
-from datetime import datetime
+from datetime import datetime, UTC
+
 
 
 class Audience(Enum):
