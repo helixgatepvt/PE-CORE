@@ -12,5 +12,6 @@ create table decision_snapshots (
   accepted_risks jsonb,
   engine_version_hash text not null,
   created_at timestamp with time zone default now()
+  
 );
 
