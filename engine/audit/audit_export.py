@@ -9,16 +9,16 @@ def generate_audit_report(ledger: CapitalLedger) -> Dict[str, Any]:
     Produce an institution-safe audit export.
     """
 
-    # 1️⃣ Verify ledger integrity first
+    # Verify ledger integrity before export
     ledger.verify_integrity()
 
-    # 2️⃣ Get immutable entries
+    # Get immutable ledger entries
     ledger_entries = ledger.entries()
 
-    # 3️⃣ Generate deterministic snapshot
+    # Generate snapshot
     snapshot = generate_ledger_snapshot(ledger_entries)
 
-    # 4️⃣ Attach verification signal
+    # Add verification signal required by test
     snapshot["verified"] = True
 
     return {
