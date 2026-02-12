@@ -66,7 +66,7 @@ def build_cross_cycle_replay(
     return {
         "audience": audience.value,
         "replay_type": "cross_cycle_belief_replay",
-        "generated_at": datetime.utcnow().isoformat(),
+        "generated_at": datetime.now(UTC).isoformat(),
         "entries": normalized,
         "interpretive": False,
         "advisory": False,
