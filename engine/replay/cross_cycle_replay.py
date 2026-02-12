@@ -16,7 +16,8 @@ and fiduciary process integrity.
 """
 
 from typing import List, Dict, Any
-from datetime import datetime
+from datetime import datetime, UTC
+
 
 from engine.replay.lp_redaction import redact_for_audience, Audience
 
