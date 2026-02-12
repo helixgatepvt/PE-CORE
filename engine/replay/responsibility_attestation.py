@@ -28,7 +28,7 @@ def attach_responsibility_attestation(
 
     attestation = {
         "policy_version": ATTESTATION_POLICY_VERSION,
-        "generated_at": datetime.utcnow().isoformat(),
+        "generated_at": datetime.now(UTC).isoformat(),
         "non_advisory": True,
         "non_reliance": True,
         "no_recommendation": True,
