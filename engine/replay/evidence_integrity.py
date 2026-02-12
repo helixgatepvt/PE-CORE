@@ -10,7 +10,7 @@ It simply makes post-hoc modification detectable.
 """
 
 from typing import Dict, Any
-from datetime import datetime
+from datetime import datetime, UTC
 import hashlib
 import json
 
@@ -51,7 +51,7 @@ def attach_integrity_signal(
         "policy_version": INTEGRITY_POLICY_VERSION,
         "hash_algorithm": HASH_ALGORITHM,
         "content_hash": digest,
-        "generated_at": datetime.utcnow().isoformat(),
+        "generated_at": datetime.now(UTC).isoformat(),
         "canonicalization": "json_sorted_keys_no_whitespace",
         "tamper_evident": True,
     }
