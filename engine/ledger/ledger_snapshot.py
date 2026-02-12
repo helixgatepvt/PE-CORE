@@ -1,10 +1,9 @@
-
 import hashlib
 import json
-from typing import Dict, Any
+from typing import List, Dict, Any
 
 
-def generate_ledger_snapshot(ledger_entries: list[Dict[str, Any]]) -> Dict[str, Any]:
+def generate_ledger_snapshot(ledger_entries: List[Dict[str, Any]]) -> Dict[str, Any]:
     """
     Generate a deterministic snapshot hash of the ledger state.
     """
