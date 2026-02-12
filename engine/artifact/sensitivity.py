@@ -49,7 +49,7 @@ def classify_artifact(
             sensitivity == SensitivityLevel.LP_ELIGIBLE
         ),
         "policy_version": CLASSIFICATION_POLICY_VERSION,
-        "classified_at": datetime.utcnow().isoformat(),
+        "classified_at": datetime.now(UTC).isoformat(),
         "step": "5E",
     }
 
