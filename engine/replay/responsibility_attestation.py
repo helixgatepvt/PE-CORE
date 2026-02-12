@@ -10,7 +10,7 @@ It is a system-level boundary declaration.
 """
 
 from typing import Dict, Any
-from datetime import datetime
+from datetime import datetime, UTC
 
 
 ATTESTATION_POLICY_VERSION = "6E-1.0"
