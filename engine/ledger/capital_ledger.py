@@ -66,3 +66,4 @@ class CapitalLedger:
 
     def entries(self) -> List[Dict[str, Any]]:
         return list(self._entries)
+        
