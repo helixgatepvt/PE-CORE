@@ -10,7 +10,8 @@ It does not redact, export, interpret, or enforce.
 
 from enum import Enum
 from typing import Dict, Any, List
-from datetime import datetime
+from datetime import datetime, UTC
+
 
 
 class SensitivityLevel(Enum):
