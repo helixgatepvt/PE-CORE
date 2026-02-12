@@ -1,19 +1,6 @@
-name: HelixGate Tests
-
-on: [push, pull_request]
-
-jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.11'
-
-      - name: Install pytest
-        run: pip install pytest
-
-      - name: Run Step 6 fiduciary gate
-        run: pytest tests/test_step6.py
+- name: Run Governance Spine Tests
+  run: |
+    pytest tests/test_step6.py \
+           tests/test_step7.py \
+           tests/test_step8.py \
+           tests/test_step9.py
