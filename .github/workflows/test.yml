@@ -18,5 +18,8 @@ jobs:
       - name: Install pytest
         run: pip install pytest
 
-      - name: Run Governance Spine Tests
-        run: pytest tests/test_step6.py tests/test_step7.py tests/test_step8.py tests/test_step9.py
+      - - name: Run Governance Spine Tests
+  run: |
+    export PYTHONPATH=$PYTHONPATH:.
+    pytest tests/test_step6.py tests/test_step7.py tests/test_step8.py tests/test_step9.py
+
