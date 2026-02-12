@@ -24,7 +24,6 @@ def generate_ledger_snapshot(
 ) -> Dict[str, Any]:
     """
     Deterministic snapshot of ledger state.
-
     Supports anchoring to previous snapshot hash.
     """
 
