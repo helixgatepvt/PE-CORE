@@ -30,3 +30,4 @@ def test_step9_detects_tampering():
 
     with pytest.raises(LedgerIntegrityError):
         ledger.verify_integrity()
+        
